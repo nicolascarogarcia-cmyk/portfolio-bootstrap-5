@@ -1,0 +1,13 @@
+/* ============================================================
+   Estilos propios del portfolio · Nicolás Caro García
+   Prioridad a clases y utilidades de Bootstrap 5.3
+   ============================================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Evita que la navbar sticky-top tape los encabezados al navegar por anclas */
+section {
+  scroll-margin-top: 72px;
+}

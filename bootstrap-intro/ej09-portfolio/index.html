@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio profesional de Nicolás Caro García, Desarrollador Web Junior (DAW). Proyectos en PHP, JavaScript, Docker y Ciberseguridad.">
+  <title>Nicolás Caro García | Desarrollador Web Junior</title>
+
+  <!-- Bootstrap 5.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Estilos propios (siempre después de Bootstrap) -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="sticky-top">
+    <nav id="navbar-principal" class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#inicio">
+          <i class="bi bi-code-slash me-2"></i>Nicolás Caro
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== PORTADA · SOBRE MÍ ==================== -->
+    <section id="inicio" class="py-5 bg-light border-bottom">
+      <div class="container py-4">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-4 text-center">
+            <img src="img/perfil.svg" alt="Avatar profesional de Nicolás Caro García" class="img-fluid rounded-circle shadow-sm border border-3 border-primary" width="240" height="240">
+          </div>
+          <div class="col-12 col-lg-8 text-center text-lg-start">
+            <span class="badge bg-primary-subtle text-primary mb-2 px-3 py-2 fs-6 rounded-pill fw-semibold">
+              2.º DAW · Especialización en Ciberseguridad
+            </span>
+            <h1 class="display-4 fw-bold text-dark">Nicolás Caro García</h1>
+            <h2 class="h4 text-secondary mb-3">Desarrollador Web Junior · DAW</h2>
+            <p class="lead text-muted">
+              Estudiante de 2.º curso del Grado Superior en Desarrollo de Aplicaciones Web en Andalucía. Enfocado en el desarrollo full-stack, la administración de servidores Linux/Nginx con Docker y la aplicación de buenas prácticas de ciberseguridad.
+            </p>
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mt-4">
+              <a href="#proyectos" class="btn btn-primary btn-lg px-4">
+                <i class="bi bi-folder-symlink me-2"></i>Ver proyectos
+              </a>
+              <a href="docs/cv.pdf" class="btn btn-outline-dark btn-lg px-4" download>
+                <i class="bi bi-file-earmark-pdf me-2"></i>Descargar CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HABILIDADES ==================== -->
+    <section id="habilidades" class="py-5">
+      <div class="container py-3">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold display-6">Habilidades</h2>
+          <p class="text-muted">Stack tecnológico, idiomas y competencias transversales</p>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <!-- Front-end -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="bg-primary text-white rounded-3 mb-3 mx-auto d-inline-flex align-items-center justify-content-center p-3">
+                  <i class="bi bi-layout-text-window-reverse fs-3"></i>
+                </div>
+                <h3 class="h5 card-title fw-bold">Front-end</h3>
+                <div class="d-flex flex-wrap gap-2 justify-content-center mt-3">
+                  <span class="badge bg-secondary">HTML5</span>
+                  <span class="badge bg-secondary">CSS3</span>
+                  <span class="badge bg-primary">Bootstrap 5.3</span>
+                  <span class="badge bg-secondary">JavaScript ES6</span>
+                  <span class="badge bg-secondary">Svelte</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Back-end -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="bg-success text-white rounded-3 mb-3 mx-auto d-inline-flex align-items-center justify-content-center p-3">
+                  <i class="bi bi-server fs-3"></i>
+                </div>
+                <h3 class="h5 card-title fw-bold">Back-end</h3>
+                <div class="d-flex flex-wrap gap-2 justify-content-center mt-3">
+                  <span class="badge bg-success">PHP 8</span>
+                  <span class="badge bg-secondary">Node.js</span>
+                  <span class="badge bg-dark">API REST</span>
+                  <span class="badge bg-secondary">Autenticación</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bases de datos -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="bg-warning text-dark rounded-3 mb-3 mx-auto d-inline-flex align-items-center justify-content-center p-3">
+                  <i class="bi bi-database fs-3"></i>
+                </div>
+                <h3 class="h5 card-title fw-bold">Bases de datos</h3>
+                <div class="d-flex flex-wrap gap-2 justify-content-center mt-3">
+                  <span class="badge bg-warning text-dark">MySQL</span>
+                  <span class="badge bg-secondary">MariaDB</span>
+                  <span class="badge bg-dark">SQL</span>
+                  <span class="badge bg-secondary">Modelado Relacional</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Herramientas -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="bg-info text-dark rounded-3 mb-3 mx-auto d-inline-flex align-items-center justify-content-center p-3">
+                  <i class="bi bi-tools fs-3"></i>
+                </div>
+                <h3 class="h5 card-title fw-bold">Herramientas</h3>
+                <div class="d-flex flex-wrap gap-2 justify-content-center mt-3">
+                  <span class="badge bg-dark">Git &amp; GitHub</span>
+                  <span class="badge bg-info text-dark">Docker</span>
+                  <span class="badge bg-secondary">Ubuntu / Nginx</span>
+                  <span class="badge bg-secondary">Postman</span>
+                  <span class="badge bg-danger">GPG / Ciberseguridad</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Idiomas y Competencias Transversales -->
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <h3 class="h5 fw-bold mb-3"><i class="bi bi-translate text-primary me-2"></i>Idiomas</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                    <span>Español</span>
+                    <span class="badge bg-primary rounded-pill">Nativo</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                    <span>Inglés (Lectura técnica y comunicación profesional)</span>
+                    <span class="badge bg-secondary rounded-pill">B1 / B2</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body p-4">
+                <h3 class="h5 fw-bold mb-3"><i class="bi bi-people text-success me-2"></i>Competencias transversales</h3>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-light text-dark border p-2">Trabajo en equipo ágil</span>
+                  <span class="badge bg-light text-dark border p-2">Resolución de problemas</span>
+                  <span class="badge bg-light text-dark border p-2">Gestión del tiempo bajo presión</span>
+                  <span class="badge bg-light text-dark border p-2">Aprendizaje autónomo</span>
+                  <span class="badge bg-light text-dark border p-2">Comunicación efectiva</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROYECTOS ==================== -->
+    <section id="proyectos" class="py-5 bg-light border-top border-bottom">
+      <div class="container py-3">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold display-6">Proyectos</h2>
+          <p class="text-muted">Selección de aplicaciones web y prácticas de infraestructura</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Proyecto 1: ClickAnt! -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="img/proyecto-clickant.svg" class="card-img-top img-fluid" alt="Captura del proyecto ClickAnt! PWA">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title fw-bold">ClickAnt! · Juego Web PWA</h3>
+                <p class="card-text text-muted flex-grow-1">
+                  Aplicación web progresiva (PWA) interactiva tipo clicker desarrollada en equipo como proyecto integrador, con persistencia de datos, autenticación de usuarios y soporte offline.
+                </p>
+                <div class="mb-3 d-flex flex-wrap gap-1">
+                  <span class="badge bg-primary">JavaScript ES6</span>
+                  <span class="badge bg-secondary">Svelte</span>
+                  <span class="badge bg-dark">PWA</span>
+                  <span class="badge bg-info text-dark">Bootstrap 5</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto pt-3 border-top">
+                  <a href="https://nicolascaro.github.io/clickant/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary flex-grow-1">
+                    <i class="bi bi-box-arrow-up-right me-1"></i>Demo
+                  </a>
+                  <a href="https://github.com/nicolascaro/clickant" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark flex-grow-1">
+                    <i class="bi bi-github me-1"></i>GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: Despliegue Docker & Nginx -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="img/proyecto-docker.svg" class="card-img-top img-fluid" alt="Captura de arquitectura Docker y Nginx en Ubuntu">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title fw-bold">Infraestructura Docker &amp; Nginx</h3>
+                <p class="card-text text-muted flex-grow-1">
+                  Despliegue de servicios web en contenedores aislados sobre Ubuntu Server 24.04, configurando proxy inverso con Nginx, reglas de firewall UFW y protección Fail2Ban.
+                </p>
+                <div class="mb-3 d-flex flex-wrap gap-1">
+                  <span class="badge bg-info text-dark">Docker</span>
+                  <span class="badge bg-success">Nginx</span>
+                  <span class="badge bg-secondary">Ubuntu 24.04</span>
+                  <span class="badge bg-danger">UFW / Fail2Ban</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto pt-3 border-top">
+                  <a href="https://nicolascaro.github.io/docker-nginx-setup/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary flex-grow-1">
+                    <i class="bi bi-box-arrow-up-right me-1"></i>Demo
+                  </a>
+                  <a href="https://github.com/nicolascaro/docker-nginx-setup" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark flex-grow-1">
+                    <i class="bi bi-github me-1"></i>GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3: API REST PHP & MySQL -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="img/proyecto-api.svg" class="card-img-top img-fluid" alt="Captura de API REST en PHP y MySQL">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title fw-bold">API REST &amp; Gestión MySQL</h3>
+                <p class="card-text text-muted flex-grow-1">
+                  Servicio back-end desarrollado en PHP 8 bajo arquitectura MVC con operaciones CRUD completas, validación de peticiones con Postman y base de datos relacional MySQL.
+                </p>
+                <div class="mb-3 d-flex flex-wrap gap-1">
+                  <span class="badge bg-primary">PHP 8</span>
+                  <span class="badge bg-warning text-dark">MySQL</span>
+                  <span class="badge bg-dark">API REST</span>
+                  <span class="badge bg-secondary">Postman</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto pt-3 border-top">
+                  <a href="https://nicolascaro.github.io/php-api-rest/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary flex-grow-1">
+                    <i class="bi bi-box-arrow-up-right me-1"></i>Demo
+                  </a>
+                  <a href="https://github.com/nicolascaro/php-api-rest" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark flex-grow-1">
+                    <i class="bi bi-github me-1"></i>GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FORMACIÓN Y EXPERIENCIA ==================== -->
+    <section id="formacion" class="py-5">
+      <div class="container py-3">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold display-6">Formación y experiencia</h2>
+          <p class="text-muted">Trayectoria académica, certificaciones y experiencia laboral</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <div class="accordion shadow-sm" id="accordionTrayectoria">
+
+              <!-- Formación Reglada -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="bi bi-mortarboard me-2 text-primary"></i>CFGS Desarrollo de Aplicaciones Web (2.º Curso) · MEDAC
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionTrayectoria">
+                  <div class="accordion-body">
+                    <p class="mb-1 text-primary fw-semibold">2025 – Actualidad · Andalucía, España</p>
+                    <ul class="mb-0">
+                      <li>Diseño de interfaces web adaptables con HTML5, CSS3 y Bootstrap 5.3.</li>
+                      <li>Desarrollo web en entorno cliente (JavaScript ES6) y entorno servidor (PHP 8, MySQL).</li>
+                      <li>Despliegue de aplicaciones web con Docker, Nginx y servidores Linux Ubuntu.</li>
+                      <li>Desarrollo del proyecto colaborativo ClickAnt! bajo control de versiones con Git y GitHub.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cursos y Certificaciones -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="bi bi-shield-check me-2 text-success"></i>Cursos y especialización en Ciberseguridad
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionTrayectoria">
+                  <div class="accordion-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        <div>
+                          <strong>Criptografía aplicada y Políticas de Seguridad (GPG, SHA-256)</strong>
+                          <div class="text-muted small">Prácticas de auditoría, cifrado asimétrico y análisis forense de incidentes</div>
+                        </div>
+                        <span class="badge bg-success rounded-pill">2026</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        <div>
+                          <strong>Bastionado de Servidores Linux y Contenedores Docker</strong>
+                          <div class="text-muted small">Configuración de cortafuegos UFW, Fail2Ban y proxys inversos Nginx</div>
+                        </div>
+                        <span class="badge bg-success rounded-pill">2026</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experiencia Laboral -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="bi bi-briefcase me-2 text-warning"></i>Experiencia laboral
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionTrayectoria">
+                  <div class="accordion-body">
+                    <h4 class="h6 fw-bold mb-1">Personal de Sala y Atención al Cliente</h4>
+                    <p class="text-muted small mb-2">Restaurante de cocina japonesa · Jornada parcial</p>
+                    <p class="mb-0">
+                      Atención directa al público, coordinación de equipo en horas punta y gestión ágil de incidencias, reforzando la responsabilidad y el trabajo colaborativo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACTO ==================== -->
+    <section id="contacto" class="py-5 bg-light border-top">
+      <div class="container py-3">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold display-6">Contacto</h2>
+          <p class="text-muted">Disponible para prácticas (FFEOE) y colaboraciones en desarrollo web</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Enlaces directos -->
+          <div class="col-12 col-lg-4">
+            <div class="card border-0 shadow-sm h-100 p-4">
+              <h3 class="h5 fw-bold mb-4">Canales directos</h3>
+
+              <div class="d-flex align-items-center mb-3">
+                <div class="bg-primary-subtle text-primary rounded-circle me-3 p-3 d-inline-flex align-items-center justify-content-center">
+                  <i class="bi bi-envelope-at fs-4"></i>
+                </div>
+                <div>
+                  <p class="text-muted mb-0 small">Email profesional</p>
+                  <a href="mailto:nicolas.caro.dev@gmail.com" class="text-decoration-none fw-semibold text-dark">nicolas.caro.dev@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center mb-3">
+                <div class="bg-primary-subtle text-primary rounded-circle me-3 p-3 d-inline-flex align-items-center justify-content-center">
+                  <i class="bi bi-linkedin fs-4"></i>
+                </div>
+                <div>
+                  <p class="text-muted mb-0 small">LinkedIn</p>
+                  <a href="https://www.linkedin.com/in/nicolas-caro-garcia" target="_blank" rel="noopener noreferrer" class="text-decoration-none fw-semibold text-dark">linkedin.com/in/nicolas-caro-garcia</a>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center mb-3">
+                <div class="bg-primary-subtle text-primary rounded-circle me-3 p-3 d-inline-flex align-items-center justify-content-center">
+                  <i class="bi bi-github fs-4"></i>
+                </div>
+                <div>
+                  <p class="text-muted mb-0 small">GitHub</p>
+                  <a href="https://github.com/nicolascaro" target="_blank" rel="noopener noreferrer" class="text-decoration-none fw-semibold text-dark">github.com/nicolascaro</a>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center">
+                <div class="bg-primary-subtle text-primary rounded-circle me-3 p-3 d-inline-flex align-items-center justify-content-center">
+                  <i class="bi bi-geo-alt fs-4"></i>
+                </div>
+                <div>
+                  <p class="text-muted mb-0 small">Ubicación</p>
+                  <p class="fw-semibold text-dark mb-0">Andalucía, España</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario maquetado con Bootstrap -->
+          <div class="col-12 col-lg-6">
+            <div class="card border-0 shadow-sm p-4">
+              <h3 class="h5 fw-bold mb-3">Envíame un mensaje</h3>
+              <form id="form-contacto" action="#" method="post">
+                <div class="mb-3">
+                  <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre y apellidos">
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="nombre@empresa.com">
+                </div>
+
+                <div class="mb-3">
+                  <label for="asunto" class="form-label fw-semibold">Asunto</label>
+                  <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Prácticas FFEOE / Consulta técnica">
+                </div>
+
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">
+                  <i class="bi bi-send me-2"></i>Enviar mensaje
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-dark text-white py-4 border-top border-secondary">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 text-center text-md-start">
+      <div>
+        <p class="mb-0 small">&copy; 2026 Nicolás Caro García. Todos los derechos reservados.</p>
+        <p class="mb-0 text-white-50 small">Última actualización: 13 de noviembre de 2026</p>
+      </div>
+      <div class="d-flex gap-3">
+        <a href="https://github.com/nicolascaro" target="_blank" rel="noopener noreferrer" class="text-white-50 text-decoration-none fs-5" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nicolas-caro-garcia" target="_blank" rel="noopener noreferrer" class="text-white-50 text-decoration-none fs-5" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="mailto:nicolas.caro.dev@gmail.com" class="text-white-50 text-decoration-none fs-5" aria-label="Correo electrónico">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- JavaScript propio -->
+  <script src="js/main.js"></script>
+</body>
+</html>
